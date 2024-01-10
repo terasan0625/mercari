@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  weight: 1
+  thickness: 1
+  size: 1
+
+two:
+  weight: 1
+  thickness: 1
+  size: 1

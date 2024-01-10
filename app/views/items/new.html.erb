@@ -1,0 +1,14 @@
+<h1>Items#new</h1>
+<p>Find me in app/views/items/new.html.erb</p>
+<%= form_with model: @item do |f| %>
+   <p>重量
+     <%= f.select :weight, [["25g以下", "25"], ["50g以下", "50"], ["100g以下", "100"], ["150g以下", "150"]], include_blank: "選択して下さい" %>
+   </p> 
+   <p>厚み
+     <%= f.select :thickness, [["1cm以下", "1"], ["経済学部", "経済学部"], ["法学部", "法学部"], ["医学部", "医学部"]], include_blank: "選択して下さい" %>
+   </p> 
+   <p>大きさ   
+     <%= f.select :size, [["A4はがきサイズ以下", "1"], ["経済学部", "経済学部"], ["法学部", "法学部"], ["医学部", "医学部"]], include_blank: "選択して下さい" %>
+   </p> 
+     <%= f.submit '送信'%>
+  <% end %>
